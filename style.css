@@ -1,0 +1,104 @@
+/* General body */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #1c1c1e;
+    color: #f2f2f7;
+    padding: 2rem;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #f2f2f7;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Input container */
+#input {
+    background-color: rgba(28,28,30,0.8);
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 450px;
+    margin: 0 auto 2rem auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Inputs */
+#input input {
+    width: 60px;
+    padding: 0.4rem;
+    margin: 0.2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.2);
+    font-size: 1rem;
+    background-color: rgba(255,255,255,0.05);
+    color: #f2f2f7;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+#input input:focus {
+    outline: none;
+    border-color: #0a84ff;
+    background-color: rgba(10,132,255,0.15);
+}
+
+/* Button */
+#check-result {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: rgba(10,132,255,0.8);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#check-result:hover {
+    background-color: #0a84ff;
+    transform: scale(1.03);
+}
+
+/* Result container */
+#result {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Hit group */
+.hit-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Ticket cards */
+.ticket-card {
+    background-color: rgba(28,28,30,0.6);
+    padding: 1rem 1.2rem;
+    margin: 0.5rem 0;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ticket-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.ticket-card p {
+    margin: 0.3rem 0;
+    color: #f2f2f7;
+}
+
+.ticket-card .hits {
+    font-weight: bold;
+    color: #ffd60a; /* bright accent like Apple yellow */
+}
